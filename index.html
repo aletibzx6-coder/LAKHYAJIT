@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lakhyajit Photo Frames – Birthday & Anniversary Frames from ₹299</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Birthday, anniversary, couple and custom photo frames starting from ₹299. Order online from Lakhyajit Sarmah, North Lakhimpur, Assam." />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #060606;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout helpers */
+    .container {
+      width: 95%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 0;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      color: #ffcc33;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      opacity: 0.7;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    /* Hero */
+    #home {
+      padding: 3.5rem 0 2.5rem;
+      background: radial-gradient(circle at top, #222 0, #050505 45%, #000 100%);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-title span {
+      color: #ff4c4c;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      max-width: 28rem;
+      opacity: 0.9;
+      margin-bottom: 1.2rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 0.78rem;
+      margin-bottom: 0.7rem;
+      opacity: 0.85;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2ecc71;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff4c4c, #ffb347);
+      color: #000;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #f5f5f5;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.7rem;
+    }
+
+    .hero-right {
+      background: radial-gradient(circle at top, #333 0, #111 45%, #000 100%);
+      border-radius: 20px;
+      padding: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-right h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      opacity: 0.9;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    .hero-thumb {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    /* Sections */
+    section {
+      padding: 2.7rem 0;
+    }
+
+    h2.section-title {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      max-width: 32rem;
+      margin-bottom: 1.7rem;
+    }
+
+    /* Frame categories */
+    .frame-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #101010;
+      border-radius: 18px;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      margin-bottom: 0.35rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 0.7rem;
+    }
+
+    .gallery-item {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gallery-item span {
+      display: block;
+      font-size: 0.78rem;
+      padding: 0.35rem 0.55rem 0.5rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about-card {
+      border-radius: 18px;
+      background: #101010;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+    }
+
+    .about-card strong {
+      color: #ffcc33;
+    }
+
+    .profile-photo {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* Order form */
+    .order-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    form {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.55rem 0.6rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: #050505;
+      color: #f5f5f5;
+      font-size: 0.85rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .order-note {
+      font-size: 0.78rem;
+      opacity: 0.75;
+      margin-top: 0.4rem;
+    }
+
+    .order-info {
+      font-size: 0.9rem;
+      opacity: 0.88;
+    }
+
+    .order-info ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    .order-info li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-card {
+      background: #101010;
+      border-radius: 16px;
+      padding: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card p {
+      opacity: 0.85;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 1.2rem 0;
+      font-size: 0.8rem;
+      opacity: 0.75;
+      text-align: center;
+      background: #050505;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero, .about-grid, .order-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: left;
+      }
+
+      .hero-right {
+        order: -1;
+      }
+
+      .nav-links {
+        display: none; /* simple mobile nav */
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 2.2rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        LAKHYAJIT <span>FRAMES</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#frames">Frames</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="container hero">
+      <div>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          Custom photo frames · North Lakhimpur, Assam
+        </div>
+        <h1 class="hero-title">
+          Premium <span>Photo Frames</span> starting at ₹299
+        </h1>
+        <p class="hero-sub">
+          Birthday, anniversary, couple & custom frames – printed and framed with care by
+          <strong>Lakhyajit Sarmah</strong> in North Lakhimpur, Assam (787001).
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="https://wa.me/916002911970" target="_blank">
+            Order on WhatsApp →
+          </a>
+          <a class="btn btn-outline" href="#gallery">
+            View sample frames
+          </a>
+        </div>
+        <p class="hero-note">
+          Fixed price: <strong>₹299 per frame</strong> (standard size). Bulk & custom sizes available on request.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <h3>Best–selling designs</h3>
+        <div class="hero-grid">
+          <div class="hero-thumb">
+            <!-- replace src with your actual image path -->
+            <img src="images/bmw.jpg" alt="BMW red car framed poster" />
+          </div>
+          <div class="hero-thumb">
+            <img src="images/frame-birthday-white.jpg" alt="Radha Krishna colorful framed photo" />
+          </div>
+          <div class="hero-thumb">
+            <img src="images/frame-cars.jpg" alt="Porsche sports car framed poster" />
+          </div>
+          <div class="hero-thumb">
+            <img src="images/frame-birthday-black.jpg" alt="Custom portrait framed photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAME CATEGORIES -->
+  <section id="frames">
+    <div class="container">
+      <h2 class="section-title">Frames we make</h2>
+      <p class="section-sub">
+        You send your favourite photos – we turn them into high-quality printed frames,
+        ready to hang or gift. Perfect for birthdays, anniversaries and room decor.
+      </p>
+
+      <div class="frame-grid">
+        <div class="card">
+          <div class="badge">₹299 only</div>
+          <h3>Birthday & Anniversary Frames</h3>
+          <p>
+            Special designs for couples and families – perfect for surprise gifts,
+            cake-cutting photos, or favourite memories together.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">Trending</div>
+          <h3>Car & Supercar Posters</h3>
+          <p>
+            BMW, Porsche and more – glossy framed posters for car lovers.
+            Ideal for bedroom, gaming setup, or studio wall.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">Devotional</div>
+          <h3>God & Temple Frames</h3>
+          <p>
+            Beautiful Radha-Krishna and other devotional photos with vibrant colours,
+            perfect for your home temple or living room.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">Custom</div>
+          <h3>Portrait & Family Photos</h3>
+          <p>
+            Turn your personal photos into elegant frames – solo portraits,
+            family pictures or any special memory you want to preserve.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Sample Work</h2>
+      <p class="section-sub">
+        All frames shown below are real work by Lakhyajit – printed, framed and photographed.
+        Your order will have the same quality finish.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- replace src="" with real paths / URLs of the photos you sent -->
+        <div class="gallery-item">
+          <img src="images/ZG.jpg" alt="JOI ZUBEEN DA" />
+          <span>JOI ZUBEEN DA</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/ZG1.jpg" alt="ZUBEEN DA VOGOWAN" />
+          <span>WE ARE GENERATION ZUBEEN</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/lakhyajit.jpg" alt="Lakhyajit framed poster" />
+          <span>LAKHYAJIT MY OWN PHOTO FRAME </span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/developer.jpg" alt="Devekloper and co developer" />
+          <span>WEBSITE DESIGNER</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/RADHA.jpg" alt="RADHA KRISHNA" />
+          <span>RADHA KRISHNA PHOTO FRAME</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/BMM1.jpg" alt="Set of five car frames laid out" />
+          <span>Car frame collection</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/BMM2.jpg" alt="Devotional god frame with golden background" />
+          <span>Devotional frame (temple style)</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/BMM.jpg" alt="BMW CAR" />
+          <span>BMW CAR FRAME</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/POR.jpg" alt="Porsche car frame" />
+          <span>PORSCHE CAR FRAME</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/kk.jpg" alt="Custom portrait of radha krishna" />
+          <span>RADHA KRISHNA POTRAIT FRAME A4</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/profile-lakhyajit-road.jpg" alt="Lakhyajit Sarmah standing on a road with trees" />
+          <span>Lakhyajit – creator of the frames</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-card">
+        <h2 class="section-title">About Lakhyajit</h2>
+        <p>
+          Hi, I’m <strong>Lakhyajit Sarmah</strong> from North Lakhimpur, Assam.
+          I design and print custom photo frames for birthdays, anniversaries,
+          couples and decor lovers – all at an affordable price.
+        </p>
+        <br />
+        <p>
+          Every frame is printed with sharp colours, mounted carefully and checked
+          before delivery. You can send your photos on WhatsApp, choose your
+          design (car poster, couple frame, god frame, or anything you like),
+          and I’ll create a ready-to-gift frame for you.
+        </p>
+        <br />
+        <p>
+          <strong>Location:</strong> North Lakhimpur, Assam – 787001<br />
+          <strong>Service:</strong> Local delivery & courier shipping (details decided on chat).
+        </p>
+      </div>
+
+      <div class="profile-photo">
+        <!-- your walking-on-road profile picture -->
+        <img src="images/profile-lakhyajit-road.jpg" alt="Lakhyajit Sarmah standing on a village road" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order">
+    <div class="container">
+      <h2 class="section-title">Place your order</h2>
+      <p class="section-sub">
+        Fill this form and I will contact you on WhatsApp or email to confirm photos,
+        design and delivery. You can also directly message me on WhatsApp.
+      </p>
+
+      <div class="order-grid">
+        <div>
+          <form>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your full name" />
+            </div>
+            <div>
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" type="tel" placeholder="Your contact number" />
+            </div>
+            <div>
+              <label for="frameType">Frame type</label>
+              <select id="frameType">
+                <option>Birthday frame</option>
+                <option>Anniversary / couple frame</option>
+                <option>Car / supercar poster</option>
+                <option>God / devotional frame</option>
+                <option>Portrait / family photo</option>
+                <option>Other custom request</option>
+              </select>
+            </div>
+            <div>
+              <label for="details">Order details</label>
+              <textarea id="details" placeholder="Write your idea – how many frames, occasion, text to print, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send request (demo form)
+            </button>
+            <p class="order-note">
+              This is a demo HTML form. On your live website, ask your developer
+              to connect this form to your email <strong>lakhyajitsarmah13@gmail.com</strong>
+              or to a WhatsApp API so that you receive the orders.
+            </p>
+          </form>
+        </div>
+
+        <div class="order-info">
+          <h3>Quick order on WhatsApp</h3>
+          <p>
+            For fastest reply, click the button below and send:
+          </p>
+          <ul>
+            <li>1) Your <strong>name</strong></li>
+            <li>2) Type of frame (birthday / car / god / portrait)</li>
+            <li>3) Attach the <strong>photo(s)</strong> you want in the frame</li>
+            <li>4) Your <strong>address & pincode</strong></li>
+          </ul>
+          <br />
+          <a class="btn btn-outline" href="https://wa.me/916002911970" target="_blank">
+            Message on WhatsApp →
+          </a>
+          <p class="order-note" style="margin-top:0.6rem;">
+            Price starts at <strong>₹299 per frame</strong>. Final amount depends on
+            quantity and size. Payment details will be shared on chat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact details</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Call / WhatsApp</h3>
+          <p>
+            Phone: <strong>6002911970</strong><br />
+            WhatsApp: <a href="https://wa.me/916002911970" target="_blank">Chat now</a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:lakhyajitsarmah13@gmail.com">lakhyajitsarmah13@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Address</h3>
+          <p>
+            North Lakhimpur, Assam – 787001<br />
+            India
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Lakhyajit Sarmah · Custom Photo Frames · North Lakhimpur, Assam
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
